@@ -12,6 +12,9 @@ export class DashboardLayoutComponent {
 
   public user = computed(() => this.authService.currentUser());
 
+  /**
+   * @Get the current user
+   */
   get User() {
     return this.authService.currentUser();
   }
